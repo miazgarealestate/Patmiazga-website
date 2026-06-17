@@ -24,6 +24,7 @@
         <a href="#relocation">Relocation</a>
         <a href="#expertise">Expertise</a>
         <a href="#testimonials">Reviews</a>
+        <a href="#guides">Free Guides</a>
         <a href="#listings">Listings</a>
         <a href="#sold">Past Sales</a>
         <a href="#contact">Contact</a>
@@ -302,6 +303,88 @@
         <span>Osoyoos</span><span>Oliver</span><span>Okanagan Falls</span>
         <span>Keremeos</span><span>Cawston</span><span>Penticton</span>
         <span>Rock Creek</span><span>Bridesville</span><span>&amp; Surrounding Area</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FREE GUIDES -->
+  <section class="guides-section" id="guides">
+    <div class="container">
+      <p class="section-eyebrow center">Buyer Resources</p>
+      <h2 class="center">Free Guides for South Okanagan Buyers</h2>
+      <p class="section-sub center">Whether you're moving from Vancouver, Calgary, or anywhere in between — these guides answer the questions most agents won't. Read the first two sections free. Enter your email to unlock the full guide.</p>
+      <div class="guides-grid">
+
+        <a href="first-time-buyer-guide.html" class="guide-card">
+          <div class="guide-card-icon">🏠</div>
+          <div class="guide-card-body">
+            <p class="guide-card-eyebrow">First Time Buyers</p>
+            <h3 class="guide-card-title">First Time Buyer's Guide</h3>
+            <p class="guide-card-desc">BC incentives, PTT exemptions, FHSA, RRSP Home Buyers' Plan — everything you need to know before you make an offer.</p>
+            <span class="guide-card-cta">Read the Guide →</span>
+          </div>
+        </a>
+
+        <a href="bc-tax-guide.html" class="guide-card">
+          <div class="guide-card-icon">📋</div>
+          <div class="guide-card-body">
+            <p class="guide-card-eyebrow">Taxes & Costs</p>
+            <h3 class="guide-card-title">BC Property Tax Guide</h3>
+            <p class="guide-card-desc">PTT, GST, Speculation & Vacancy Tax, Foreign Buyer Tax — with an interactive calculator so you know your real closing costs.</p>
+            <span class="guide-card-cta">Read the Guide →</span>
+          </div>
+        </a>
+
+        <a href="buyer-guide-a-z.html" class="guide-card">
+          <div class="guide-card-icon">📖</div>
+          <div class="guide-card-body">
+            <p class="guide-card-eyebrow">Complete Process</p>
+            <h3 class="guide-card-title">Buyer's Guide A–Z</h3>
+            <p class="guide-card-desc">The full BC buying process from first search to keys in hand — including subjects, inspections, wildfire insurance, and closing.</p>
+            <span class="guide-card-cta">Read the Guide →</span>
+          </div>
+        </a>
+
+        <a href="living-in-osoyoos-guide.html" class="guide-card">
+          <div class="guide-card-icon">🍷</div>
+          <div class="guide-card-body">
+            <p class="guide-card-eyebrow">Local Life</p>
+            <h3 class="guide-card-title">Living in Osoyoos</h3>
+            <p class="guide-card-desc">Wine country, golf, climate, schools, local favourites, and what life actually looks like in Canada's warmest town.</p>
+            <span class="guide-card-cta">Read the Guide →</span>
+          </div>
+        </a>
+
+        <a href="living-in-south-okanagan-guide.html" class="guide-card">
+          <div class="guide-card-icon">🏔️</div>
+          <div class="guide-card-body">
+            <p class="guide-card-eyebrow">The Region</p>
+            <h3 class="guide-card-title">Living in the South Okanagan</h3>
+            <p class="guide-card-desc">Town-by-town breakdown of Oliver, Osoyoos, Keremeos, Okanagan Falls and beyond — including the Speculation Tax comparison.</p>
+            <span class="guide-card-cta">Read the Guide →</span>
+          </div>
+        </a>
+
+        <a href="unpermitted-work-guide.html" class="guide-card">
+          <div class="guide-card-icon">🔨</div>
+          <div class="guide-card-body">
+            <p class="guide-card-eyebrow">Due Diligence</p>
+            <h3 class="guide-card-title">Unpermitted Work & Stop Work Orders</h3>
+            <p class="guide-card-desc">How to spot unpermitted renovations, what the risks are, and how to protect yourself before you buy.</p>
+            <span class="guide-card-cta">Read the Guide →</span>
+          </div>
+        </a>
+
+        <a href="dripa-property-rights-guide.html" class="guide-card">
+          <div class="guide-card-icon">⚖️</div>
+          <div class="guide-card-body">
+            <p class="guide-card-eyebrow">Property Rights</p>
+            <h3 class="guide-card-title">DRIPA & Property Rights</h3>
+            <p class="guide-card-desc">A factual, balanced look at BC's Declaration on the Rights of Indigenous Peoples Act and what it means for property owners.</p>
+            <span class="guide-card-cta">Read the Guide →</span>
+          </div>
+        </a>
+
       </div>
     </div>
   </section>
@@ -726,7 +809,7 @@
           </div>
         </div>
       </div>
-      <form class="contact-form" action="https://formspree.io/f/xzdqkvra" method="POST">
+      <form class="contact-form" onsubmit="handleSubmit(event)">
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your name" required />
@@ -755,9 +838,8 @@
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="4" placeholder="Tell Pat what you're looking for..." required></textarea>
         </div>
-        <input type="hidden" name="_subject" value="New inquiry from patmiazga.com" />
-        <input type="hidden" name="_next" value="https://www.patmiazga.com/thankyou.html" />
         <button type="submit" class="btn-primary full-width">Send Message</button>
+        <p class="form-note" id="form-success" style="display:none;">&#10003; Message sent. Pat will be in touch shortly.</p>
       </form>
     </div>
   </section>
